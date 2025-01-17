@@ -1,0 +1,83 @@
+_____________________ Configuración antes de iniciar un repositorio _________________________
+
+#Inicializar un proyecto de git 
+	git init
+
+#configurar usuario de repositorio username y email
+	git config user.name "usuaria96"
+	git config user.email "correo@hotmail.com"
+
+#conectar con el repositorio remoto
+	git remote add origin https://github.com/franjavi96a/gitPractica.git
+___________________________________________________________________________________________
+
+
+
+___________________________Subir proyecto al repositorio___________________________________
+
+#Revisar el estado del repositorio
+	git status
+
+#Agregar todos los cambios 
+ 	git add .
+
+#Comentar los cambios realizados
+	git commit -m "Descripción de los cambios realizados"
+
+#Subir los cambios al repositorio remoto
+	git push -u origin master
+
+______________________________________________________________________________________________
+
+
+
+______________________________Clonar y descargar cambios______________________________________
+
+#descragar el proyecto completo en un nuevo equipo
+	git clone https://github.com/franjavi96a/gitPractica.git
+
+#Descragar los últimos cambios de una rama
+ 	git pull origin master
+
+______________________________________________________________________________________________
+
+
+_____________________________________Manejo de Ramas_______________________________________
+
+#Verificar la rama de trabajo
+	git branch
+
+#Crear una nueva rama
+	git branch nueva_rama
+
+#crear una nueva rama y cambiarme a la nueva rama con -b
+	git branch -b nueva_rama
+
+#Cambiar el nombre de una rama con -m
+	git branch -m nueva_rama rama_modificada
+
+#Cambiarme de rama de trabajo
+	git checkout nombre_rama
+
+#Eliminar una rama con -d
+	git branch -d nombre_rama 
+_______________________________________________________________________________________________
+
+
+
+______________________Unir proyecto en una rama________________________________________________
+
+#ver la diferencia de archivos entre ramas
+	git diff master nueva_rama
+
+NOTA: siempre cambiar a la rama de destino en este caso master
+
+#Unir los cambios de una rama a otra
+	git merge ramaOrigen master
+
+NOTA: Siempre después de hacer merge hacer:
+	git add .
+	git commit
+	git push
+_______________________________________________________________________________________________
+
