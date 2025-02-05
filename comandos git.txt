@@ -24,7 +24,7 @@ ___________________________Subir proyecto al repositorio________________________
 #Comentar los cambios realizados
 	git commit -m "Descripción de los cambios realizados"
 
-#Subir los cambios al repositorio remoto
+#Subir los cambios al repositorio remoto por primera vez con -u
 	git push -u origin master
 
 ______________________________________________________________________________________________
@@ -60,7 +60,13 @@ _____________________________________Manejo de Ramas____________________________
 	git checkout nombre_rama
 
 #Eliminar una rama con -d
-	git branch -d nombre_rama 
+	git branch -d nombre_rama
+
+#Listar todas las ramas de Git en tu repositorio, incluyendo tanto ramas locales como ramas de seguimiento remotas
+	git branch -a
+
+#Listar solo las ramas remotas.
+	git branch -r
 _______________________________________________________________________________________________
 
 
